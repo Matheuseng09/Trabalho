@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matheuseng09.github.io/Trabalho/sitemap.xml
