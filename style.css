@@ -1,0 +1,133 @@
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+.topo {
+  background: linear-gradient(135deg, #0f4c81, #1f7acc);
+  color: white;
+  padding: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 180px;
+  height: auto;
+}
+
+.subtitulo { margin-top: 4px; }
+.menu {
+  background: #0b2239;
+  padding: 14px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  background: #18466f;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+.menu a:hover { background: #2468a5; }
+.conteudo {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px 24px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  align-items: center;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.foto-destaque, .imagem-interna {
+  width: 100%;
+  border-radius: 14px;
+}
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.galeria img {
+  width: 100%;
+  border-radius: 14px;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+}
+.formulario {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+  display: grid;
+  gap: 10px;
+}
+.formulario input, .formulario textarea, .formulario button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cfd8e3;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+.formulario button {
+  background: #0f4c81;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.formulario button:hover { background: #1f7acc; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+  border-radius: 16px;
+  overflow: hidden;
+}
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+th {
+  background: #0f4c81;
+  color: white;
+}
+.lista-simples li { margin-bottom: 8px; }
+.rodape {
+  background: #0b2239;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 30px;
+}
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; }
+}
